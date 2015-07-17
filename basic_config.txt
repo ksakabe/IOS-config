@@ -1,0 +1,20 @@
+!
+enable
+!
+configure terminal
+!
+no ip domain-lookup
+!
+hostname XXX
+!
+line console 0
+password cisco
+logging synchronous
+exec-timeout 0 0
+exit
+!
+line vty 0 15
+password cisco
+login
+exit
+!
