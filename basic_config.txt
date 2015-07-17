@@ -18,3 +18,5 @@ password cisco
 login
 exit
 !
+enable password cisco
+enable secret class
