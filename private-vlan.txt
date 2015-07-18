@@ -1,0 +1,16 @@
+! Define Private VLAN
+!
+vtp mode tramsparent
+!
+! Define secondary VLAN
+vlan VID
+private-vlan [isolated|community]
+exit
+!
+! Accociate VLAN
+vlan VID
+private-vlan primary
+private-vlan association [add|remove] secondary-vlan-list
+!
+!
+show vlan private-vlan
