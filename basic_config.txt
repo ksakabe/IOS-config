@@ -20,3 +20,5 @@ exit
 !
 enable password cisco
 enable secret class
+!
+banner motd #Unauthorized use prohibited#
