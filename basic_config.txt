@@ -18,12 +18,7 @@ password cisco
 login
 exit
 !
-<<<<<<< HEAD
 enable password cisco
 enable secret class
 !
 banner motd #Unauthorized use prohibited#
-=======
-enable secret class
-!
->>>>>>> bce1e325c492940c94d8170951d2169a769b09b3
