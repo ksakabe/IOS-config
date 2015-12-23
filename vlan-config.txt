@@ -2,3 +2,6 @@
 vlan VLAN_ID
 name VLAN_NAME
 exit
+!
+! remove VLAN
+no vlan VLAN_ID
