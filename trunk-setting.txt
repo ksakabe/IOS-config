@@ -1,4 +1,4 @@
 ! make trunk
 (config-if)#switchport mode trunk
-!
+! Change native VLAN
 (config-if)#switchport trunk native vlan VLAN_ID

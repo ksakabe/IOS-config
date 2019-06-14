@@ -5,20 +5,21 @@ configure terminal
 !
 no ip domain-lookup
 !
-hostname XXX
+hostname <HOSTNAME>
 !
 line console 0
-password cisco
+password <PASSWORD>
+login
 logging synchronous
 exec-timeout 0 0
 exit
 !
 line vty 0 15
-password cisco
+password <PASSWORD>
 login
 exit
 !
-enable password cisco
-enable secret class
+enable password <PASSWORD>
+enable secret <PASSWORD>
 !
 banner motd #Unauthorized use prohibited#

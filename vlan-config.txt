@@ -1,12 +1,13 @@
 ! make VLAN
 (config)#vlan VLAN_ID
-(config-vlan)#name VLAN_NAME
+(config-vlan)#name <VLAN_NAME>
 (config-vlan)#exit
 !
 ! remove VLAN
-(config)#no vlan VLAN_ID
+(config)#no vlan <VLAN_ID>
 !
 ! Attach VLAN
-(config)#int IF_NAME
+(config)#int <IF_NAME>
+(config-if)#switchport mode access
 (config-if)#switchport access vlan VLAN_ID
 !
